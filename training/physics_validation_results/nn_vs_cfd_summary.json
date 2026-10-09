@@ -1,0 +1,681 @@
+{
+  "pairs": [
+    [
+      0,
+      100
+    ],
+    [
+      100,
+      200
+    ],
+    [
+      200,
+      300
+    ],
+    [
+      300,
+      400
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      500,
+      600
+    ],
+    [
+      600,
+      700
+    ],
+    [
+      700,
+      800
+    ],
+    [
+      800,
+      900
+    ],
+    [
+      900,
+      1000
+    ],
+    [
+      1000,
+      1100
+    ],
+    [
+      1100,
+      1200
+    ],
+    [
+      1200,
+      1300
+    ],
+    [
+      1300,
+      1400
+    ],
+    [
+      1400,
+      1500
+    ],
+    [
+      1500,
+      1600
+    ],
+    [
+      1600,
+      1700
+    ],
+    [
+      1700,
+      1800
+    ],
+    [
+      1800,
+      1900
+    ],
+    [
+      1900,
+      2000
+    ]
+  ],
+  "grid": {
+    "shape_xyz": [
+      12,
+      24,
+      3
+    ],
+    "all_cells_per_pair": 864,
+    "common_interior_cells_per_pair": 220,
+    "warning": "z has only 3 cells; CFD z derivative is a grid numerical reference, not an exact derivative"
+  },
+  "models": {
+    "baseline": {
+      "lambda_mass": 0.0,
+      "regions": {
+        "all_cells": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "all_cells",
+              "quantity": "dJx_dx",
+              "points": 17280,
+              "mae": 3.9429341897691166,
+              "rmse": 6.956825924852722,
+              "relative_l2": 0.9999267422217479,
+              "correlation": 0.012480815700368722,
+              "max_abs_difference": 80.0352513641119,
+              "nn_rms": 0.10934113546019537,
+              "cfd_rms": 6.957335603801602
+            },
+            "dJy_dy": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "all_cells",
+              "quantity": "dJy_dy",
+              "points": 17280,
+              "mae": 7.329162799262148,
+              "rmse": 11.368038173633877,
+              "relative_l2": 1.2856251543739081,
+              "correlation": 0.0021411858581587622,
+              "max_abs_difference": 106.59639549255371,
+              "nn_rms": 7.163327581031923,
+              "cfd_rms": 8.842420463661538
+            },
+            "dJz_dz": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "all_cells",
+              "quantity": "dJz_dz",
+              "points": 17280,
+              "mae": 5.369832787722484,
+              "rmse": 9.757307828504498,
+              "relative_l2": 0.9960818450575514,
+              "correlation": 0.09411855692289113,
+              "max_abs_difference": 118.5653338432312,
+              "nn_rms": 0.764409957747788,
+              "cfd_rms": 9.795688855207212
+            },
+            "divergence": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "all_cells",
+              "quantity": "divergence",
+              "points": 17280,
+              "mae": 8.517525348747775,
+              "rmse": 14.275463492812083,
+              "relative_l2": 1.1074919484512227,
+              "correlation": 0.07762256456281748,
+              "max_abs_difference": 143.1468358039856,
+              "nn_rms": 7.19587098383113,
+              "cfd_rms": 12.889902732724755
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.03886724623405751,
+            "cancellation_ratio": 0.9067186741887531,
+            "combined_rms": 7.188227670478748
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.2804474282699327,
+              "std": 1.3846327960381766,
+              "mae": 1.0447086479066423,
+              "rms": 1.412748647101713,
+              "max_abs": 6.622788906097412
+            },
+            "divergence": {
+              "mean": 0.7200261675356024,
+              "std": 7.159757086242971,
+              "mae": 4.762731655612932,
+              "rms": 7.19587098383113,
+              "max_abs": 26.3996639251709
+            },
+            "residual": {
+              "mean": 1.0004735944585668,
+              "std": 7.3473048916833035,
+              "mae": 5.211238588054699,
+              "rms": 7.415108669774306,
+              "max_abs": 25.47089385986328
+            },
+            "temporal_divergence": {
+              "correlation": 0.04052800731505325,
+              "cancellation_ratio": 0.8613586135377658,
+              "combined_rms": 7.415108669774306
+            }
+          }
+        },
+        "interior_only": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "interior_only",
+              "quantity": "dJx_dx",
+              "points": 4400,
+              "mae": 3.2310423431032556,
+              "rmse": 5.415393289746379,
+              "relative_l2": 1.0002816807609647,
+              "correlation": -0.00850184776316954,
+              "max_abs_difference": 45.03527542948723,
+              "nn_rms": 0.09325773264899684,
+              "cfd_rms": 5.413868307201828
+            },
+            "dJy_dy": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "interior_only",
+              "quantity": "dJy_dy",
+              "points": 4400,
+              "mae": 7.331146760704843,
+              "rmse": 9.514760562850125,
+              "relative_l2": 1.2227054344930548,
+              "correlation": -0.01132227171193614,
+              "max_abs_difference": 52.1035270690918,
+              "nn_rms": 5.236789771045702,
+              "cfd_rms": 7.781727548135921
+            },
+            "dJz_dz": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "interior_only",
+              "quantity": "dJz_dz",
+              "points": 4400,
+              "mae": 1.5681459237421984,
+              "rmse": 2.3898720170756587,
+              "relative_l2": 1.0133724872580765,
+              "correlation": -0.025369381131824353,
+              "max_abs_difference": 25.63194952905178,
+              "nn_rms": 0.1694015672368453,
+              "cfd_rms": 2.3583352095358525
+            },
+            "divergence": {
+              "model": "baseline",
+              "lambda_mass": 0.0,
+              "region": "interior_only",
+              "quantity": "divergence",
+              "points": 4400,
+              "mae": 6.314145256014625,
+              "rmse": 8.411429993902054,
+              "relative_l2": 1.3071844225275873,
+              "correlation": -0.020472148849270178,
+              "max_abs_difference": 49.359907150268555,
+              "nn_rms": 5.210063445439043,
+              "cfd_rms": 6.434769148822622
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.47675832931390677,
+            "cancellation_ratio": 0.9621012493198433,
+            "combined_rms": 5.201303440623755
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.4214315080236305,
+              "std": 1.461149814642296,
+              "mae": 1.1082482282817363,
+              "rms": 1.5207114442866174,
+              "max_abs": 4.332160949707031
+            },
+            "divergence": {
+              "mean": -0.3491742483391003,
+              "std": 5.19834958903275,
+              "mae": 3.9128433722054416,
+              "rms": 5.210063445439043,
+              "max_abs": 17.210535049438477
+            },
+            "residual": {
+              "mean": 0.07225726194002412,
+              "std": 5.830934696478893,
+              "mae": 4.544032057645646,
+              "rms": 5.831382387265011,
+              "max_abs": 17.828290939331055
+            },
+            "temporal_divergence": {
+              "correlation": 0.31873866985049715,
+              "cancellation_ratio": 0.8663760834085319,
+              "combined_rms": 5.831382387265011
+            }
+          }
+        }
+      }
+    },
+    "physics_1e-03": {
+      "lambda_mass": 0.001,
+      "regions": {
+        "all_cells": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "all_cells",
+              "quantity": "dJx_dx",
+              "points": 17280,
+              "mae": 3.9520908733089812,
+              "rmse": 6.96040267851061,
+              "relative_l2": 1.0004408404141556,
+              "correlation": -0.017040068635963815,
+              "max_abs_difference": 80.53119042515755,
+              "nn_rms": 0.1499943026354926,
+              "cfd_rms": 6.957335603801602
+            },
+            "dJy_dy": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "all_cells",
+              "quantity": "dJy_dy",
+              "points": 17280,
+              "mae": 6.10754870779835,
+              "rmse": 9.576176567960253,
+              "relative_l2": 1.0829813632267458,
+              "correlation": 0.00172478575627852,
+              "max_abs_difference": 93.77806282043457,
+              "nn_rms": 3.6915530120731317,
+              "cfd_rms": 8.842420463661538
+            },
+            "dJz_dz": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "all_cells",
+              "quantity": "dJz_dz",
+              "points": 17280,
+              "mae": 6.6050812588223105,
+              "rmse": 10.331914638055679,
+              "relative_l2": 1.0547409978792266,
+              "correlation": -0.04397843057392887,
+              "max_abs_difference": 116.29718828201294,
+              "nn_rms": 2.8700413027410905,
+              "cfd_rms": 9.795688855207212
+            },
+            "divergence": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "all_cells",
+              "quantity": "divergence",
+              "points": 17280,
+              "mae": 7.573879129459319,
+              "rmse": 12.969162761862412,
+              "relative_l2": 1.0061490013370253,
+              "correlation": 0.06711911930927245,
+              "max_abs_difference": 138.3533170223236,
+              "nn_rms": 2.5285415593324783,
+              "cfd_rms": 12.889902732724755
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.7304200980644702,
+            "cancellation_ratio": 0.3852115047715739,
+            "combined_rms": 2.527601619710191
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.23735339272836292,
+              "std": 1.4437221694985833,
+              "mae": 1.147532470603646,
+              "rms": 1.4631029819330408,
+              "max_abs": 5.627737522125244
+            },
+            "divergence": {
+              "mean": 0.10569286763116166,
+              "std": 2.52633161619836,
+              "mae": 2.0466098659982284,
+              "rms": 2.5285415593324783,
+              "max_abs": 8.277301788330078
+            },
+            "residual": {
+              "mean": 0.34304626101834906,
+              "std": 3.1443697521779823,
+              "mae": 2.629675439034623,
+              "rms": 3.163027327673678,
+              "max_abs": 8.487748146057129
+            },
+            "temporal_divergence": {
+              "correlation": 0.19471497257216916,
+              "cancellation_ratio": 0.7924120735136565,
+              "combined_rms": 3.163027327673678
+            }
+          }
+        },
+        "interior_only": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "interior_only",
+              "quantity": "dJx_dx",
+              "points": 4400,
+              "mae": 3.2344489806670094,
+              "rmse": 5.415192116916998,
+              "relative_l2": 1.0002445219647094,
+              "correlation": -0.007153287745362437,
+              "max_abs_difference": 45.0252835303545,
+              "nn_rms": 0.14540630883054106,
+              "cfd_rms": 5.413868307201828
+            },
+            "dJy_dy": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "interior_only",
+              "quantity": "dJy_dy",
+              "points": 4400,
+              "mae": 6.317439843627055,
+              "rmse": 8.483503559572041,
+              "relative_l2": 1.0901825471394473,
+              "correlation": -0.01340169387789114,
+              "max_abs_difference": 46.67138981819153,
+              "nn_rms": 2.8375995572248587,
+              "cfd_rms": 7.781727548135921
+            },
+            "dJz_dz": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "interior_only",
+              "quantity": "dJz_dz",
+              "points": 4400,
+              "mae": 3.176093538361135,
+              "rmse": 3.7715318972032987,
+              "relative_l2": 1.5992348678649277,
+              "correlation": -0.027854877429960047,
+              "max_abs_difference": 22.609193801879883,
+              "nn_rms": 2.8032240232552046,
+              "cfd_rms": 2.3583352095358525
+            },
+            "divergence": {
+              "model": "physics_1e-03",
+              "lambda_mass": 0.001,
+              "region": "interior_only",
+              "quantity": "divergence",
+              "points": 4400,
+              "mae": 4.487271456517364,
+              "rmse": 6.845356552075217,
+              "relative_l2": 1.063807635325613,
+              "correlation": -0.023295659452586694,
+              "max_abs_difference": 43.85694062709808,
+              "nn_rms": 2.0064899833813654,
+              "cfd_rms": 6.434769148822622
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.7425049778709858,
+            "cancellation_ratio": 0.34804358162581117,
+            "combined_rms": 1.9632524422696134
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.322971424352039,
+              "std": 1.5421067289569665,
+              "mae": 1.2377665021744642,
+              "rms": 1.5755645668909732,
+              "max_abs": 4.05028772354126
+            },
+            "divergence": {
+              "mean": -0.34437592885710977,
+              "std": 1.9767162854171971,
+              "mae": 1.773240149508823,
+              "rms": 2.0064899833813654,
+              "max_abs": 3.63120698928833
+            },
+            "residual": {
+              "mean": -0.021404503827745263,
+              "std": 2.7551390952727544,
+              "mae": 2.3457751161672853,
+              "rms": 2.755222239145961,
+              "max_abs": 5.4605302810668945
+            },
+            "temporal_divergence": {
+              "correlation": 0.21410094076718994,
+              "cancellation_ratio": 0.7691737243187671,
+              "combined_rms": 2.755222239145961
+            }
+          }
+        }
+      }
+    },
+    "physics_1e-02": {
+      "lambda_mass": 0.01,
+      "regions": {
+        "all_cells": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "all_cells",
+              "quantity": "dJx_dx",
+              "points": 17280,
+              "mae": 3.9591545516273823,
+              "rmse": 6.960426113758727,
+              "relative_l2": 1.0004442088369905,
+              "correlation": -0.011735607046196563,
+              "max_abs_difference": 80.49329993128777,
+              "nn_rms": 0.1437542724878662,
+              "cfd_rms": 6.957335603801602
+            },
+            "dJy_dy": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "all_cells",
+              "quantity": "dJy_dy",
+              "points": 17280,
+              "mae": 6.159213586205712,
+              "rmse": 9.313759318473465,
+              "relative_l2": 1.053304279834794,
+              "correlation": -0.00856271272744797,
+              "max_abs_difference": 83.59027874469757,
+              "nn_rms": 2.8591155117096276,
+              "cfd_rms": 8.842420463661538
+            },
+            "dJz_dz": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "all_cells",
+              "quantity": "dJz_dz",
+              "points": 17280,
+              "mae": 6.557737134210949,
+              "rmse": 10.587902314438825,
+              "relative_l2": 1.080873685448929,
+              "correlation": -0.12454591423557498,
+              "max_abs_difference": 116.20901989936829,
+              "nn_rms": 2.996406276704088,
+              "cfd_rms": 9.795688855207212
+            },
+            "divergence": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "all_cells",
+              "quantity": "divergence",
+              "points": 17280,
+              "mae": 7.369324218698549,
+              "rmse": 12.962731715052561,
+              "relative_l2": 1.0056500800539716,
+              "correlation": -0.08344311060948023,
+              "max_abs_difference": 139.71497321128845,
+              "nn_rms": 0.7628693212867305,
+              "cfd_rms": 12.889902732724755
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.9768516773738672,
+            "cancellation_ratio": 0.12741282215386038,
+            "combined_rms": 0.7460685562452113
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.28555451961993067,
+              "std": 1.633108295331553,
+              "mae": 1.3539679523350463,
+              "rms": 1.657885426667388,
+              "max_abs": 5.663047790527344
+            },
+            "divergence": {
+              "mean": -0.3958549676100827,
+              "std": 0.6521260966859856,
+              "mae": 0.5441660771646571,
+              "rms": 0.7628693212867305,
+              "max_abs": 2.1950736045837402
+            },
+            "residual": {
+              "mean": -0.1103004476107243,
+              "std": 1.5566965260988068,
+              "mae": 1.2954404357217115,
+              "rms": 1.5605993281785115,
+              "max_abs": 7.158527374267578
+            },
+            "temporal_divergence": {
+              "correlation": -0.3140900304252428,
+              "cancellation_ratio": 0.6446746947403241,
+              "combined_rms": 1.5605993281785115
+            }
+          }
+        },
+        "interior_only": {
+          "gradient_comparison": {
+            "dJx_dx": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "interior_only",
+              "quantity": "dJx_dx",
+              "points": 4400,
+              "mae": 3.242193538454746,
+              "rmse": 5.414177287417875,
+              "relative_l2": 1.0000570719859625,
+              "correlation": 0.006667904653699169,
+              "max_abs_difference": 45.21828702837229,
+              "nn_rms": 0.12436093852112796,
+              "cfd_rms": 5.413868307201828
+            },
+            "dJy_dy": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "interior_only",
+              "quantity": "dJy_dy",
+              "points": 4400,
+              "mae": 6.541874599927528,
+              "rmse": 8.534039202327303,
+              "relative_l2": 1.0966766890176691,
+              "correlation": -0.024583747136885034,
+              "max_abs_difference": 46.692337334156036,
+              "nn_rms": 2.4698576576090994,
+              "cfd_rms": 7.781727548135921
+            },
+            "dJz_dz": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "interior_only",
+              "quantity": "dJz_dz",
+              "points": 4400,
+              "mae": 3.155692114743509,
+              "rmse": 3.663535272928352,
+              "relative_l2": 1.5534412826959212,
+              "correlation": -0.04483761504669738,
+              "max_abs_difference": 24.281384229660034,
+              "nn_rms": 2.553040847130874,
+              "cfd_rms": 2.3583352095358525
+            },
+            "divergence": {
+              "model": "physics_1e-02",
+              "lambda_mass": 0.01,
+              "region": "interior_only",
+              "quantity": "divergence",
+              "points": 4400,
+              "mae": 4.167116855655967,
+              "rmse": 6.555552429966519,
+              "relative_l2": 1.01877041403513,
+              "correlation": 0.008804914089285238,
+              "max_abs_difference": 44.67958980798721,
+              "nn_rms": 0.6685413294953079,
+              "cfd_rms": 6.434769148822622
+            }
+          },
+          "nn_yz_cancellation": {
+            "correlation": -0.9962558144435266,
+            "cancellation_ratio": 0.127671756794342,
+            "combined_rms": 0.641282276299826
+          },
+          "network_continuity": {
+            "temporal": {
+              "mean": 0.3561937085335905,
+              "std": 1.6613862065636962,
+              "mae": 1.395216079164635,
+              "rms": 1.6991403960117641,
+              "max_abs": 3.8897619247436523
+            },
+            "divergence": {
+              "mean": -0.47852014513178304,
+              "std": 0.46686826830103884,
+              "mae": 0.49751703894951127,
+              "rms": 0.6685413294953079,
+              "max_abs": 1.8301451206207275
+            },
+            "residual": {
+              "mean": -0.12232643653046,
+              "std": 1.575085018036408,
+              "mae": 1.30395552824844,
+              "rms": 1.5798280194745853,
+              "max_abs": 3.6896400451660156
+            },
+            "temporal_divergence": {
+              "correlation": -0.32055583008086835,
+              "cancellation_ratio": 0.6672467850957642,
+              "combined_rms": 1.5798280194745853
+            }
+          }
+        }
+      }
+    }
+  },
+  "cfd_yz_cancellation": {
+    "all_cells": {
+      "correlation": -0.08101614209504206,
+      "cancellation_ratio": 0.6789032133248404,
+      "combined_rms": 12.653472306879646
+    },
+    "interior_only": {
+      "correlation": -0.35821072645660995,
+      "cancellation_ratio": 0.7128445373597154,
+      "combined_rms": 7.228288345291015
+    }
+  }
+}

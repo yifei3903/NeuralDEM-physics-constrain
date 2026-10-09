@@ -1,0 +1,38 @@
+{
+  "scope": "all Stage-7 one-step training predictions",
+  "counts": {
+    "epsilon_below_zero": 0,
+    "epsilon_above_one": 2851458,
+    "pressure_nonpositive": 0,
+    "nan": 0,
+    "inf": 0
+  },
+  "extrema": {
+    "epsilon_min": 0.41977787017822266,
+    "epsilon_max": 1.000363826751709,
+    "pressure_min_pa": 101069.9921875,
+    "pressure_max_pa": 101620.3359375
+  },
+  "autoregressive_rollout": {
+    "anchors": [
+      0,
+      500,
+      1000,
+      1500
+    ],
+    "steps_per_anchor": 100,
+    "counts": {
+      "epsilon_below_zero": 0,
+      "epsilon_above_one": 0,
+      "pressure_nonpositive": 0,
+      "nan": 0,
+      "inf": 0
+    },
+    "extrema": {
+      "epsilon_min": 0.4185655415058136,
+      "epsilon_max": 0.9999842047691345,
+      "pressure_min_pa": 101320.4765625,
+      "pressure_max_pa": 101598.515625
+    }
+  }
+}

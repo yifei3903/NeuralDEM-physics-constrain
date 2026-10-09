@@ -1,0 +1,50 @@
+{
+  "method": "dm/dtau_AD + spatial_divergence_AD; data-only checkpoint",
+  "rows": [
+    {
+      "tau_seconds": 0.02,
+      "temporal_rms": 0.13199738115156054,
+      "divergence_rms": 3.710450036225855,
+      "residual_rms": 3.6696302152362237,
+      "corr_temporal_divergence": -0.3343680608505269,
+      "cancellation_ratio": 0.9550241855335148,
+      "dJx_dx_rms": 0.4281115740663427,
+      "dJy_dy_rms": 3.6731122663207914,
+      "dJz_dz_rms": 0.40675250938828245
+    },
+    {
+      "tau_seconds": 0.04,
+      "temporal_rms": 0.22799453611771053,
+      "divergence_rms": 3.9926821204746616,
+      "residual_rms": 3.9697091996976797,
+      "corr_temporal_divergence": -0.1263293388159916,
+      "cancellation_ratio": 0.9405385730028144,
+      "dJx_dx_rms": 0.42986518831661524,
+      "dJy_dy_rms": 3.943169331197401,
+      "dJz_dz_rms": 0.40917229358473617
+    },
+    {
+      "tau_seconds": 0.06,
+      "temporal_rms": 0.3211849861776282,
+      "divergence_rms": 4.391961592539908,
+      "residual_rms": 4.433353680151582,
+      "corr_temporal_divergence": 0.1014742513877232,
+      "cancellation_ratio": 0.9406356467186117,
+      "dJx_dx_rms": 0.42677018482140516,
+      "dJy_dy_rms": 4.323476136888773,
+      "dJz_dz_rms": 0.4085136282449469
+    },
+    {
+      "tau_seconds": 0.08,
+      "temporal_rms": 0.42163877043077874,
+      "divergence_rms": 4.717911491850239,
+      "residual_rms": 4.881860869623159,
+      "corr_temporal_divergence": 0.36224239992592255,
+      "cancellation_ratio": 0.9498614899149772,
+      "dJx_dx_rms": 0.420654589491986,
+      "dJy_dy_rms": 4.630860937305947,
+      "dJz_dz_rms": 0.40482107502690173
+    }
+  ],
+  "nan_or_inf": false
+}

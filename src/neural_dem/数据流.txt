@@ -1,0 +1,48 @@
+              CFD-DEM at time t
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+      DEM                         CFD
+   particles                     field
+        │                           │
+ coords + displacement      velocity + voidfraction
+        │                           │
+        ▼                           ▼
+ particle sampling             patchify
+        │                           │
+        ▼                           ▼
+ supernode pooling          fluid patch tokens
+        │                           │
+        ▼                           ▼
+ particle tokens            fluid tokens
+        │                           │
+        └────────────┬──────────────┘
+                     │
+               condition Ug
+                     │
+                     ▼
+       Multi-branch / Multimodal
+              Transformer
+                     │
+                     ▼
+                latent tokens
+              /            \
+             /              \
+            ▼                ▼
+   particle decoder      fluid decoder
+     Perceiver            Perceiver
+            │                │
+            ▼                ▼
+ particle displacement    CFD field
+ particle coordinates    velocity
+                         void fraction
+            │                │
+            └──────┬─────────┘
+                   ▼
+          state at t + Δt
+                   │
+                   ▼
+            下一次重新输入
+                   │
+                   ▼
+           autoregressive rollout

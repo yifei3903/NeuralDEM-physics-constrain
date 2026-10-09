@@ -1,0 +1,156 @@
+{
+  "stage7_rate_representation": "[du/dt,dv/dt,dw/dt,dmstar/dt,dPstar/dt]",
+  "training_used_derivative_labels": false,
+  "forward_difference": [
+    {
+      "quantity": "du_dt",
+      "mae": 3.680042400296645,
+      "rmse": 8.511758778657622,
+      "relative_l2": 1.0000077650447763,
+      "correlation": 0.023159294246925477,
+      "prediction_rms": 0.01372035241092832,
+      "reference_rms": 8.511692684982801,
+      "rms_ratio": 0.0016119417040437996
+    },
+    {
+      "quantity": "dv_dt",
+      "mae": 7.079572640493819,
+      "rmse": 15.381431888064231,
+      "relative_l2": 1.0003111560099005,
+      "correlation": 0.0009485493245476697,
+      "prediction_rms": 0.20101084832535673,
+      "reference_rms": 15.376647351828586,
+      "rms_ratio": 0.013072475665604218
+    },
+    {
+      "quantity": "dw_dt",
+      "mae": 2.193188334389017,
+      "rmse": 6.330003795739292,
+      "relative_l2": 1.0000002262439325,
+      "correlation": -0.0076198328634864395,
+      "prediction_rms": 0.0014673095422690278,
+      "reference_rms": 6.330002363614664,
+      "rms_ratio": 0.00023180236878002366
+    },
+    {
+      "quantity": "dmstar_dt",
+      "mae": 1.673139699259277,
+      "rmse": 6.279349399381751,
+      "relative_l2": 1.0000045012831724,
+      "correlation": 0.008441594864825794,
+      "prediction_rms": 0.011026410596294126,
+      "reference_rms": 6.279321134379194,
+      "rms_ratio": 0.0017559876872556626
+    },
+    {
+      "quantity": "dpstar_dt",
+      "mae": 0.7708000523107196,
+      "rmse": 1.7986340393361264,
+      "relative_l2": 1.0328780420757278,
+      "correlation": -0.03460012320228681,
+      "prediction_rms": 0.4849928762559125,
+      "reference_rms": 1.741380846592008,
+      "rms_ratio": 0.2785105149198546
+    }
+  ],
+  "centered_difference": [
+    {
+      "quantity": "du_dt",
+      "mae": 3.0476459897252104,
+      "rmse": 6.730343483225984,
+      "relative_l2": 1.0000146091359108,
+      "correlation": 0.030363269792357817,
+      "prediction_rms": 0.01372035241092832,
+      "reference_rms": 6.730245160159727,
+      "rms_ratio": 0.002038611088366757
+    },
+    {
+      "quantity": "dv_dt",
+      "mae": 5.886842808012524,
+      "rmse": 12.449931960860008,
+      "relative_l2": 1.0002166396632346,
+      "correlation": 0.019186163086849325,
+      "prediction_rms": 0.20101084832535673,
+      "reference_rms": 12.447235395975618,
+      "rms_ratio": 0.016149035663802633
+    },
+    {
+      "quantity": "dw_dt",
+      "mae": 1.7075978881427563,
+      "rmse": 4.85764105717765,
+      "relative_l2": 0.9999997469804164,
+      "correlation": -0.006325380897680913,
+      "prediction_rms": 0.0014673095422690278,
+      "reference_rms": 4.8576422862562785,
+      "rms_ratio": 0.0003020620819323162
+    },
+    {
+      "quantity": "dmstar_dt",
+      "mae": 1.46802712567668,
+      "rmse": 4.797334189951802,
+      "relative_l2": 1.0000087073174881,
+      "correlation": 0.009785287910801216,
+      "prediction_rms": 0.011026410596294126,
+      "reference_rms": 4.797292418403631,
+      "rms_ratio": 0.002298465391434972
+    },
+    {
+      "quantity": "dpstar_dt",
+      "mae": 0.7861066304802619,
+      "rmse": 1.3540642470125697,
+      "relative_l2": 1.0208792295277744,
+      "correlation": -0.32205059479359477,
+      "prediction_rms": 0.4849928762559125,
+      "reference_rms": 1.3263706497769727,
+      "rms_ratio": 0.3656541075735228
+    }
+  ],
+  "stage6_mass_time_derivative_reference": [
+    {
+      "tau_seconds": 0.02,
+      "quantity": "mass_dt",
+      "mae": 1.7983620016630422,
+      "rmse": 5.690137817743131,
+      "relative_l2": 0.9995698223110459,
+      "correlation": 0.03156296831014866,
+      "ad_rms": 0.13199738115156054,
+      "cfd_temporal_fd_rms": 5.692586641508747,
+      "ad_to_cfd_rms_ratio": 0.023187592822755232
+    },
+    {
+      "tau_seconds": 0.04,
+      "quantity": "mass_dt",
+      "mae": 1.9803321662746924,
+      "rmse": 6.25132632114861,
+      "relative_l2": 0.9990054590402886,
+      "correlation": 0.04668893929275088,
+      "ad_rms": 0.22799453611771053,
+      "cfd_temporal_fd_rms": 6.257549710643275,
+      "ad_to_cfd_rms_ratio": 0.036435113848144365
+    },
+    {
+      "tau_seconds": 0.06,
+      "quantity": "mass_dt",
+      "mae": 1.6170866535782302,
+      "rmse": 5.051286961520784,
+      "relative_l2": 1.003857492447094,
+      "correlation": -0.028894627398288433,
+      "ad_rms": 0.3211849861776282,
+      "cfd_temporal_fd_rms": 5.031876535789267,
+      "ad_to_cfd_rms_ratio": 0.06383006099080475
+    },
+    {
+      "tau_seconds": 0.08,
+      "quantity": "mass_dt",
+      "mae": 1.6483440057476064,
+      "rmse": 5.163734858150441,
+      "relative_l2": 1.0054316261236589,
+      "correlation": -0.025941863464089603,
+      "ad_rms": 0.42163877043077874,
+      "cfd_temporal_fd_rms": 5.1358389014066566,
+      "ad_to_cfd_rms_ratio": 0.0820973512847718
+    }
+  ],
+  "comparison_note": "Stage-6 mass rates are dimensional while Stage-7 mstar rates are divided by rho_ref; relative L2, correlation, and RMS ratio are scale-invariant. Training budgets differ.",
+  "nan_or_inf": false
+}

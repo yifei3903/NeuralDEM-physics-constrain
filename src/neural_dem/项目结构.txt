@@ -1,0 +1,74 @@
+NeuralDEM-main/
+│
+├── README.md
+│
+├── tutorial_hopper.ipynb
+├── tutorial_fluidized_bed.ipynb        ★ 流化床官方推理教程
+│
+└── src/
+    │
+    └── neural_dem/
+        │
+        ├── __init__.py
+        │
+        ├── hopper_model.py             料斗模型
+        │
+        ├── fbed_model.py（已读）               ★ 流化床模型总入口
+        │
+        ├── modules/
+        │   │
+        │   ├── continuous_sincos_embed.py（已读）
+        │   │       坐标位置编码
+        │   │
+        │   ├── supernode_pooling.py（已读）
+        │   │       ★ 大量 DEM 粒子 → 少量 supernodes
+        │   │
+        │   ├── multi_dit_block.py
+        │   │       ★ 多分支 Transformer 主干
+        │   │
+        │   ├── multimodal_dit_block.py
+        │   │       ★ 多模态/多物理场 token 交互
+        │   │
+        │   ├── multimodal_dot_product_attention.py
+        │   │       多分支 attention
+        │   │
+        │   ├── dot_product_attention.py
+        │   │       普通 attention
+        │   │
+        │   ├── perceiver_attention.py
+        │   │       ★ query 与 latent/token 的 cross-attention
+        │   │
+        │   ├── dit_perceiver_block.py
+        │   │       DiT + Perceiver 模块
+        │   │
+        │   ├── dit_perceiver_decoder.py
+        │   │       ★ 最终场解码器
+        │   │
+        │   ├── scalar_conditioner.py
+        │   │       标量工况条件编码
+        │   │
+        │   ├── scalars_conditioner.py
+        │   │       多个标量工况条件编码
+        │   │
+        │   ├── mlp.py
+        │   │       MLP
+        │   │
+        │   └── functional.py
+        │           一些基础函数
+        │
+        └── utils/
+            │
+            ├── patch_utils.py
+            │       ★ 流体网格 patch 化相关
+            │
+            ├── mixing_utils.py
+            │       ★ 混合度 / mixing 相关
+            │
+            ├── sampling_utils.py
+            │       采样
+            │
+            ├── plotting_utils.py
+            │       可视化
+            │
+            └── logscale.py
+                    数值缩放/变换

@@ -1,0 +1,57 @@
+① tutorial_fluidized_bed.ipynb
+目的：
+先看作者认为用户应该怎样使用 FbedModel
+↓
+
+② fbed_model.py
+目的：
+把整个网络结构完整展开
+这是最重要的一个文件
+↓
+
+③ 输入 particle branch
+supernode_pooling.py
+continuous_sincos_embed.py
+↓
+
+④ 输入 fluid branch
+patch / coordinate embedding
+↓
+
+⑤ 条件输入
+scalar_conditioner.py
+scalars_conditioner.py
+↓
+
+⑥ 多分支 Transformer
+multi_dit_block.py
+multimodal_dit_block.py
+↓
+
+⑦ attention
+multimodal_dot_product_attention.py
+dot_product_attention.py
+↓
+
+⑧ decoder
+perceiver_attention.py
+dit_perceiver_block.py
+dit_perceiver_decoder.py
+↓
+
+⑨ dataset.py
+把你自己的 CFD-DEM 数据怎么变成上述输入完整接起来
+↓
+
+⑩ train.py
+完整训练数据流
+↓
+
+⑪ autoregressive rollout
+t
+↓
+t+Δt
+↓
+t+2Δt
+↓
+...

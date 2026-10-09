@@ -1,0 +1,33 @@
+{
+  "device": "cpu",
+  "tau_requires_grad": true,
+  "fluid_shape": [
+    1,
+    4,
+    864,
+    5
+  ],
+  "particle_shape": [
+    1,
+    4,
+    9240,
+    3
+  ],
+  "tau_gradient_shape": [
+    1,
+    4,
+    864,
+    1
+  ],
+  "tau_gradient_finite": true,
+  "residual_finite": true,
+  "total_loss": 3.368994951248169,
+  "parameter_gradient_norm": 117.35851287841797,
+  "tau_normalization_derivative": 10.0,
+  "encoder_calls_for_k_queries": 1,
+  "perturbed_query_change": 8.061528205871582e-05,
+  "other_query_max_change": 0.0,
+  "dm_dt_rms": 0.22618068754673004,
+  "residual_rms": 3.1485657691955566,
+  "nan_or_inf": false
+}

@@ -1,0 +1,67 @@
+{
+  "device": "cpu",
+  "rate_shape": [
+    1,
+    864,
+    5
+  ],
+  "particle_shape": [
+    9240,
+    3
+  ],
+  "rate_finite": true,
+  "predicted_fluid_finite": true,
+  "mass_star_finite": true,
+  "reconstructed_epsilon_finite": true,
+  "pressure_density_finite": true,
+  "dt_zero_external_max_error": 5.960464477539063e-08,
+  "dt_zero_internal_max_error": 0.0,
+  "euler_internal_identity_max_error": 1.1737574823200703e-07,
+  "loss": 0.09829442203044891,
+  "gradients_initial": {
+    "fluid_decoder": {
+      "parameters_with_gradient": 20,
+      "norm": 0.000218029526877217
+    },
+    "transformer": {
+      "parameters_with_gradient": 80,
+      "norm": 0.0
+    },
+    "fluid_encoder": {
+      "parameters_with_gradient": 2,
+      "norm": 0.0
+    }
+  },
+  "gradients_after_one_optimizer_step": {
+    "fluid_decoder": {
+      "parameters_with_gradient": 20,
+      "norm": 0.00017447283607907593
+    },
+    "transformer": {
+      "parameters_with_gradient": 80,
+      "norm": 0.000686225073877722
+    },
+    "fluid_encoder": {
+      "parameters_with_gradient": 2,
+      "norm": 2.803314380628308e-08
+    }
+  },
+  "invalid_state": {
+    "epsilon_below_zero": 0,
+    "epsilon_above_one": 607,
+    "pressure_nonpositive": 0,
+    "nan": 0,
+    "inf": 0,
+    "epsilon_min": 0.42021581530570984,
+    "epsilon_max": 1.000363826751709,
+    "pressure_min_pa": 101319.78125,
+    "pressure_max_pa": 101559.859375
+  },
+  "load_report": {
+    "loaded_keys": 141,
+    "newly_initialized_keys": [],
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "nan_or_inf": false
+}

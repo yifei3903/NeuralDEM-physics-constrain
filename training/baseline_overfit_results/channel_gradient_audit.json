@@ -1,0 +1,527 @@
+[
+  {
+    "epoch": 0,
+    "channels": {
+      "u": {
+        "raw_channel_loss": 0.0851072147488594,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 15.99343363977115,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 15.99343363977115
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          }
+        }
+      },
+      "v": {
+        "raw_channel_loss": 1.4379221200942993,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 60.85229940184875,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 60.85229940184875
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          }
+        }
+      },
+      "w": {
+        "raw_channel_loss": 0.19570721685886383,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 23.62495425831191,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 23.62495425831191
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0
+          }
+        }
+      },
+      "epsilon": {
+        "raw_channel_loss": 0.36323821544647217,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 33.07514777732106,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 99.22544333196316
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0
+          }
+        }
+      },
+      "pressure": {
+        "raw_channel_loss": 0.04957101494073868,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 11.490505024823392,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 34.471515074470176
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "channels": {
+      "u": {
+        "raw_channel_loss": 0.0024213099386543036,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.910081216618035,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.910081216618035
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0016274584756791968,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0016274584756791968
+          },
+          "transformer": {
+            "raw_gradient_norm": 2.9436210272497504e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 2.9436210272497504e-05
+          }
+        }
+      },
+      "v": {
+        "raw_channel_loss": 0.056915607303380966,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 1.8839306564021223,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 1.8839306564021223
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.003516793668120671,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.003516793668120671
+          },
+          "transformer": {
+            "raw_gradient_norm": 5.787260981476548e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 5.787260981476548e-05
+          }
+        }
+      },
+      "w": {
+        "raw_channel_loss": 0.0009916662238538265,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.9728524054358861,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.9728524054358861
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0020349755640222595,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0020349755640222595
+          },
+          "transformer": {
+            "raw_gradient_norm": 3.874540757102288e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 3.874540757102288e-05
+          }
+        }
+      },
+      "epsilon": {
+        "raw_channel_loss": 0.015101565048098564,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 1.8131776865555875,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 5.439533059666763
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0030781505120797024,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.009234451536239106
+          },
+          "transformer": {
+            "raw_gradient_norm": 4.668477101591112e-05,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.00014005431304773335
+          }
+        }
+      },
+      "pressure": {
+        "raw_channel_loss": 0.0006511126994155347,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.12901460711753363,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.38704382135260085
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.00024111484294385638,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0007233445288315691
+          },
+          "transformer": {
+            "raw_gradient_norm": 3.790416298207817e-06,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 1.1371248894623451e-05
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 100,
+    "channels": {
+      "u": {
+        "raw_channel_loss": 0.0021330721210688353,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.36492432932701424,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.36492432932701424
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.00050011653386146,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.00050011653386146
+          },
+          "transformer": {
+            "raw_gradient_norm": 1.2413218736834174e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 1.2413218736834174e-05
+          }
+        }
+      },
+      "v": {
+        "raw_channel_loss": 0.03825831785798073,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 4.7915242501758115,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 4.7915242501758115
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.01625838170823049,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.01625838170823049
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.00043837226840481814,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.00043837226840481814
+          }
+        }
+      },
+      "w": {
+        "raw_channel_loss": 0.0006739366799592972,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.21283791268083185,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.21283791268083185
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0013715824318558491,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0013715824318558491
+          },
+          "transformer": {
+            "raw_gradient_norm": 3.632470956991364e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 3.632470956991364e-05
+          }
+        }
+      },
+      "epsilon": {
+        "raw_channel_loss": 0.004017721861600876,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 2.6072905250136795,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 7.821871575041039
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.008226173587095893,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.024678520761287678
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0002034223512124497,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0006102670536373491
+          }
+        }
+      },
+      "pressure": {
+        "raw_channel_loss": 0.0003113487036898732,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.22640628054190307,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.6792188416257092
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.001810562986534778,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.005431688959604334
+          },
+          "transformer": {
+            "raw_gradient_norm": 4.434245275555051e-05,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.00013302735826665153
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 300,
+    "channels": {
+      "u": {
+        "raw_channel_loss": 0.0015854547964408994,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.19339713009075366,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.19339713009075366
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0013386586305092914,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0013386586305092914
+          },
+          "transformer": {
+            "raw_gradient_norm": 2.1187758592777566e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 2.1187758592777566e-05
+          }
+        }
+      },
+      "v": {
+        "raw_channel_loss": 0.025992393493652344,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 1.3023475150423893,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 1.3023475150423893
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.02107366886902784,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.02107366886902784
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.0002387587644845219,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0002387587644845219
+          }
+        }
+      },
+      "w": {
+        "raw_channel_loss": 0.0005258239107206464,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.058242008473126786,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.058242008473126786
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.000303065880339296,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.000303065880339296
+          },
+          "transformer": {
+            "raw_gradient_norm": 6.087580026553346e-06,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 6.087580026553346e-06
+          }
+        }
+      },
+      "epsilon": {
+        "raw_channel_loss": 0.0006767674349248409,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.5123672612772141,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 1.5371017838316423
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.009929521871062384,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.02978856561318715
+          },
+          "transformer": {
+            "raw_gradient_norm": 9.82565620989451e-05,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0002947696862968353
+          }
+        }
+      },
+      "pressure": {
+        "raw_channel_loss": 7.580427336506546e-05,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.09635969285786075,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.2890790785735823
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0006375155563658272,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0019125466690974816
+          },
+          "transformer": {
+            "raw_gradient_norm": 8.877895067596719e-06,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 2.6633685202790158e-05
+          }
+        }
+      }
+    }
+  },
+  {
+    "epoch": 500,
+    "channels": {
+      "u": {
+        "raw_channel_loss": 0.0009937770664691925,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.049390000012058254,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.049390000012058254
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0012222247461385132,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.0012222247461385132
+          },
+          "transformer": {
+            "raw_gradient_norm": 2.82749813251379e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 2.82749813251379e-05
+          }
+        }
+      },
+      "v": {
+        "raw_channel_loss": 0.014125038869678974,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.8261708219144799,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.8261708219144799
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.01224202494419726,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.01224202494419726
+          },
+          "transformer": {
+            "raw_gradient_norm": 0.00027745122636556167,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.00027745122636556167
+          }
+        }
+      },
+      "w": {
+        "raw_channel_loss": 0.0004208877217024565,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.10876526697278209,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.10876526697278209
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.001286394256367573,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 0.001286394256367573
+          },
+          "transformer": {
+            "raw_gradient_norm": 2.4941992550069265e-05,
+            "effective_weight_in_total_loss": 1.0,
+            "effective_gradient_norm": 2.4941992550069265e-05
+          }
+        }
+      },
+      "epsilon": {
+        "raw_channel_loss": 0.00033842070843093097,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.18984104293516688,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.5695231288055006
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.002735913542567579,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.008207740627702737
+          },
+          "transformer": {
+            "raw_gradient_norm": 7.528658830242625e-05,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.00022585976490727876
+          }
+        }
+      },
+      "pressure": {
+        "raw_channel_loss": 3.998758984380402e-05,
+        "groups": {
+          "fluid_decoder": {
+            "raw_gradient_norm": 0.05153885266656775,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.15461655799970325
+          },
+          "fluid_encoder": {
+            "raw_gradient_norm": 0.0007019371551074479,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 0.0021058114653223436
+          },
+          "transformer": {
+            "raw_gradient_norm": 1.0689752778947512e-05,
+            "effective_weight_in_total_loss": 3.0,
+            "effective_gradient_norm": 3.206925833684253e-05
+          }
+        }
+      }
+    }
+  }
+]
