@@ -1,0 +1,72 @@
+{
+  "scope": "20 supervised target fields t_(n+1), 0.60 m/s",
+  "channels": {
+    "u": {
+      "physical_min": -0.41561999917030334,
+      "physical_max": 0.4177500009536743,
+      "physical_mean": 0.00060012662081486,
+      "physical_std": 0.054679380501190526,
+      "normalization_formula": "identity: u*=u [m/s]",
+      "normalized_min": -0.41561999917030334,
+      "normalized_max": 0.4177500009536743,
+      "normalized_mean": 0.00060012662081486,
+      "normalized_std": 0.054679380501190526
+    },
+    "v": {
+      "physical_min": 0.09002000093460083,
+      "physical_max": 2.1249001026153564,
+      "physical_mean": 0.7944166550550747,
+      "physical_std": 0.32536972635461914,
+      "normalization_formula": "identity: v*=v [m/s]",
+      "normalized_min": 0.09002000093460083,
+      "normalized_max": 2.1249001026153564,
+      "normalized_mean": 0.7944166550550747,
+      "normalized_std": 0.32536972635461914
+    },
+    "w": {
+      "physical_min": -0.16274000704288483,
+      "physical_max": 0.18066999316215515,
+      "physical_mean": -7.491668150365698e-06,
+      "physical_std": 0.020592445691928776,
+      "normalization_formula": "identity: w*=w [m/s]",
+      "normalized_min": -0.16274000704288483,
+      "normalized_max": 0.18066999316215515,
+      "normalized_mean": -7.491668150365698e-06,
+      "normalized_std": 0.020592445691928776
+    },
+    "epsilon": {
+      "physical_min": 0.41999998688697815,
+      "physical_max": 1.0,
+      "physical_mean": 0.8450815934825826,
+      "physical_std": 0.2384687588769717,
+      "normalization_formula": "identity: epsilon*=epsilon",
+      "normalized_min": 0.41999998688697815,
+      "normalized_max": 1.0,
+      "normalized_mean": 0.8450815934825826,
+      "normalized_std": 0.2384687588769717
+    },
+    "pressure": {
+      "physical_min": 101320.0,
+      "physical_max": 101560.0,
+      "physical_mean": 101358.85648148147,
+      "physical_std": 57.26350523731261,
+      "normalization_formula": "P*=(P-101325.0)/1000.0; P=P*1000.0+101325.0 Pa",
+      "normalized_min": -0.004999999888241291,
+      "normalized_max": 0.23499999940395355,
+      "normalized_mean": 0.03385648151295889,
+      "normalized_std": 0.057263505395730496
+    }
+  },
+  "fluid_loss_structure": {
+    "formula": "L_fluid=mean(MSE_u,MSE_v,MSE_w)+MSE_epsilon+MSE_Pstar",
+    "outer_fluid_weight": 3.0,
+    "effective_channel_weights_in_total_data_loss": {
+      "u": 1.0,
+      "v": 1.0,
+      "w": 1.0,
+      "epsilon": 3.0,
+      "pressure": 3.0
+    },
+    "five_channels_equally_weighted": false
+  }
+}

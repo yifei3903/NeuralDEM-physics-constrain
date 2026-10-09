@@ -1,0 +1,123 @@
+{
+  "description": "Pure-data long overfit; lambda_mass=0 throughout",
+  "source": "gidaspow_060",
+  "pairs": [
+    [
+      0,
+      100
+    ],
+    [
+      100,
+      200
+    ],
+    [
+      200,
+      300
+    ],
+    [
+      300,
+      400
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      500,
+      600
+    ],
+    [
+      600,
+      700
+    ],
+    [
+      700,
+      800
+    ],
+    [
+      800,
+      900
+    ],
+    [
+      900,
+      1000
+    ],
+    [
+      1000,
+      1100
+    ],
+    [
+      1100,
+      1200
+    ],
+    [
+      1200,
+      1300
+    ],
+    [
+      1300,
+      1400
+    ],
+    [
+      1400,
+      1500
+    ],
+    [
+      1500,
+      1600
+    ],
+    [
+      1600,
+      1700
+    ],
+    [
+      1700,
+      1800
+    ],
+    [
+      1800,
+      1900
+    ],
+    [
+      1900,
+      2000
+    ]
+  ],
+  "seed": 42,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "initial_state": "D:\\NeuralDEM\\NeuralDEM-main\\training\\small_overfit_results\\shared_initial_state.pt",
+  "final_epoch": 500,
+  "elapsed_seconds": 3444.893697977066,
+  "nan_or_inf": false,
+  "plateau_diagnostic": {
+    "plateau": false,
+    "window_epochs": 25,
+    "relative_improvement_previous_vs_recent": {
+      "u": 0.09138192361555475,
+      "v": -0.006321968878536184,
+      "w": -0.00531467207964589,
+      "epsilon": -0.1619218941802371,
+      "pressure": -0.45090799500411477
+    },
+    "criterion": "all five channel improvements < 2.0%"
+  },
+  "final_training_metrics": {
+    "epoch": 500,
+    "epoch_seconds": 7.191701650619507,
+    "total_data_loss": 0.008912629983387887,
+    "particle_loss": 9.61436853685882e-06,
+    "fluid_total_loss": 0.002967671863734722,
+    "u_mse": 0.000978635164210573,
+    "v_mse": 0.005976729607209563,
+    "w_mse": 0.0003396325555513613,
+    "epsilon_mse": 0.0004996675634174608,
+    "pressure_mse": 3.633856895248755e-05,
+    "u_rmse": 0.031283145049859885,
+    "v_rmse": 0.07730931125815028,
+    "w_rmse": 0.01842912248457211,
+    "epsilon_rmse": 0.022353245031034325,
+    "pressure_rmse": 0.006028148053298587
+  }
+}

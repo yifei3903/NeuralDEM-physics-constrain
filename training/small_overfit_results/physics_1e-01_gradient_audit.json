@@ -1,0 +1,58 @@
+{
+  "loss_data": 0.2087593376636505,
+  "loss_mass_raw": 2.8314380645751953,
+  "data_gradient_norms": {
+    "fluid_decoder": {
+      "norm": 10.150793184586082,
+      "tensors_with_grad": 20,
+      "parameter_tensors": 20
+    },
+    "fluid_encoder": {
+      "norm": 0.002949581009914024,
+      "tensors_with_grad": 2,
+      "parameter_tensors": 2
+    },
+    "transformer": {
+      "norm": 5.9075019380450545e-05,
+      "tensors_with_grad": 80,
+      "parameter_tensors": 80
+    },
+    "particle_decoder": {
+      "norm": 0.09555231652505847,
+      "tensors_with_grad": 20,
+      "parameter_tensors": 20
+    },
+    "particle_encoder": {
+      "norm": 9.692643114326918e-05,
+      "tensors_with_grad": 8,
+      "parameter_tensors": 8
+    }
+  },
+  "mass_gradient_norms": {
+    "fluid_decoder": {
+      "norm": 372.7259703150266,
+      "tensors_with_grad": 20,
+      "parameter_tensors": 20
+    },
+    "fluid_encoder": {
+      "norm": 0.05846327735765395,
+      "tensors_with_grad": 2,
+      "parameter_tensors": 2
+    },
+    "transformer": {
+      "norm": 0.0010928281420652859,
+      "tensors_with_grad": 74,
+      "parameter_tensors": 80
+    },
+    "particle_decoder": {
+      "norm": 0.0,
+      "tensors_with_grad": 0,
+      "parameter_tensors": 20
+    },
+    "particle_encoder": {
+      "norm": 4.799319928476108e-05,
+      "tensors_with_grad": 8,
+      "parameter_tensors": 8
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "0.1": {
+    "steps": 5,
+    "success": true,
+    "finite": true,
+    "metrics": {
+      "1": {
+        "velocity_mae": 0.07179194688796997,
+        "voidfraction_mae": 0.028988035395741463,
+        "pressure_mae_pa": 15.126997947692871
+      },
+      "2": {
+        "velocity_mae": 0.054515473544597626,
+        "voidfraction_mae": 0.05102059245109558,
+        "pressure_mae_pa": 6.6644511222839355
+      },
+      "3": {
+        "velocity_mae": 0.03898920491337776,
+        "voidfraction_mae": 0.02696114405989647,
+        "pressure_mae_pa": 10.739927291870117
+      },
+      "4": {
+        "velocity_mae": 0.05484941229224205,
+        "voidfraction_mae": 0.05202731117606163,
+        "pressure_mae_pa": 6.91978645324707
+      },
+      "5": {
+        "velocity_mae": 0.03834729269146919,
+        "voidfraction_mae": 0.027307143434882164,
+        "pressure_mae_pa": 10.587845802307129
+      }
+    }
+  },
+  "0.05": {
+    "steps": 2,
+    "success": true,
+    "finite": true,
+    "metrics": {
+      "1": {
+        "velocity_mae": 0.17302362620830536,
+        "voidfraction_mae": 0.030411746352910995,
+        "pressure_mae_pa": 13.618281364440918
+      },
+      "2": {
+        "velocity_mae": 0.06500080227851868,
+        "voidfraction_mae": 0.02710515446960926,
+        "pressure_mae_pa": 9.673846244812012
+      }
+    }
+  }
+}

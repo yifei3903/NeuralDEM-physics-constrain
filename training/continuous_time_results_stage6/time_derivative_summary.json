@@ -1,0 +1,138 @@
+{
+  "method": "pointwise AD versus centered raw-CFD FD with dt=0.001 s",
+  "rows": [
+    {
+      "tau_seconds": 0.02,
+      "quantity": "epsilon_dt",
+      "mae": 1.5155524270001883,
+      "rmse": 4.798155947263899,
+      "relative_l2": 0.9995762854340456,
+      "correlation": 0.031420607005524695,
+      "ad_rms": 0.11126300100822512,
+      "cfd_temporal_fd_rms": 4.800189857625922,
+      "ad_to_cfd_rms_ratio": 0.02317887506709028
+    },
+    {
+      "tau_seconds": 0.02,
+      "quantity": "pressure_dt",
+      "mae": 560.786966937192,
+      "rmse": 1734.5051607108715,
+      "relative_l2": 0.9965271202289229,
+      "correlation": 0.06553169191627325,
+      "ad_rms": 38.027605908534674,
+      "cfd_temporal_fd_rms": 1740.5498811837854,
+      "ad_to_cfd_rms_ratio": 0.02184804142623668
+    },
+    {
+      "tau_seconds": 0.02,
+      "quantity": "mass_dt",
+      "mae": 1.7983620016630422,
+      "rmse": 5.690137817743131,
+      "relative_l2": 0.9995698223110459,
+      "correlation": 0.03156296831014866,
+      "ad_rms": 0.13199738115156054,
+      "cfd_temporal_fd_rms": 5.692586641508747,
+      "ad_to_cfd_rms_ratio": 0.023187592822755232
+    },
+    {
+      "tau_seconds": 0.04,
+      "quantity": "epsilon_dt",
+      "mae": 1.6688858483574087,
+      "rmse": 5.271676354417137,
+      "relative_l2": 0.9990059131651267,
+      "correlation": 0.046765357322725264,
+      "ad_rms": 0.19234648169848836,
+      "cfd_temporal_fd_rms": 5.276922073178736,
+      "ad_to_cfd_rms_ratio": 0.03645050638062992
+    },
+    {
+      "tau_seconds": 0.04,
+      "quantity": "pressure_dt",
+      "mae": 394.424347134409,
+      "rmse": 1392.2908824356196,
+      "relative_l2": 0.9969810366198885,
+      "correlation": 0.12264233769486092,
+      "ad_rms": 27.233343750629036,
+      "cfd_temporal_fd_rms": 1396.506885583269,
+      "ad_to_cfd_rms_ratio": 0.019501045094564413
+    },
+    {
+      "tau_seconds": 0.04,
+      "quantity": "mass_dt",
+      "mae": 1.9803321662746924,
+      "rmse": 6.25132632114861,
+      "relative_l2": 0.9990054590402886,
+      "correlation": 0.04668893929275088,
+      "ad_rms": 0.22799453611771053,
+      "cfd_temporal_fd_rms": 6.257549710643275,
+      "ad_to_cfd_rms_ratio": 0.036435113848144365
+    },
+    {
+      "tau_seconds": 0.06,
+      "quantity": "epsilon_dt",
+      "mae": 1.3632640749337481,
+      "rmse": 4.259355151226607,
+      "relative_l2": 1.0038627245314669,
+      "correlation": -0.028909058621960255,
+      "ad_rms": 0.27102035720825984,
+      "cfd_temporal_fd_rms": 4.242965743363544,
+      "ad_to_cfd_rms_ratio": 0.06387521691217161
+    },
+    {
+      "tau_seconds": 0.06,
+      "quantity": "pressure_dt",
+      "mae": 203.02789610518565,
+      "rmse": 946.2137218347317,
+      "relative_l2": 0.999068490004901,
+      "correlation": 0.04200703493776941,
+      "ad_rms": 38.515586576320004,
+      "cfd_temporal_fd_rms": 947.0959511795734,
+      "ad_to_cfd_rms_ratio": 0.04066703751436193
+    },
+    {
+      "tau_seconds": 0.06,
+      "quantity": "mass_dt",
+      "mae": 1.6170866535782302,
+      "rmse": 5.051286961520784,
+      "relative_l2": 1.003857492447094,
+      "correlation": -0.028894627398288433,
+      "ad_rms": 0.3211849861776282,
+      "cfd_temporal_fd_rms": 5.031876535789267,
+      "ad_to_cfd_rms_ratio": 0.06383006099080475
+    },
+    {
+      "tau_seconds": 0.08,
+      "quantity": "epsilon_dt",
+      "mae": 1.3898000231569043,
+      "rmse": 4.35385681186012,
+      "relative_l2": 1.0054368754644003,
+      "correlation": -0.025937479013758327,
+      "ad_rms": 0.3557530892894188,
+      "cfd_temporal_fd_rms": 4.330313436981433,
+      "ad_to_cfd_rms_ratio": 0.08215411989608921
+    },
+    {
+      "tau_seconds": 0.08,
+      "quantity": "pressure_dt",
+      "mae": 185.7490528206985,
+      "rmse": 875.2427542060632,
+      "relative_l2": 1.001413467172508,
+      "correlation": 0.007605646629354033,
+      "ad_rms": 56.88865843492396,
+      "cfd_temporal_fd_rms": 874.0073734751263,
+      "ad_to_cfd_rms_ratio": 0.06508944908408484
+    },
+    {
+      "tau_seconds": 0.08,
+      "quantity": "mass_dt",
+      "mae": 1.6483440057476064,
+      "rmse": 5.163734858150441,
+      "relative_l2": 1.0054316261236589,
+      "correlation": -0.025941863464089603,
+      "ad_rms": 0.42163877043077874,
+      "cfd_temporal_fd_rms": 5.1358389014066566,
+      "ad_to_cfd_rms_ratio": 0.0820973512847718
+    }
+  ],
+  "nan_or_inf": false
+}
