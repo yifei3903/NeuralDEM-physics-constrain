@@ -144,3 +144,13 @@ class ContinuousTimeConfig:
     evaluation_taus: tuple = (0.01, 0.025, 0.05, 0.075, 0.1)
     derivative_taus: tuple = (0.02, 0.04, 0.06, 0.08)
     output_dir: str = r"D:\NeuralDEM\NeuralDEM-stage6b\training\continuous_time_results_stage6"
+
+
+@dataclass
+class Stage6BConfig:
+    """Fixed controlled Stage-6B mass-physics experiment."""
+
+    lambda_mass: float = 1e-3
+    train_epochs: int = 100
+    checkpoint_epochs: tuple = (1, 25, 50, 75, 100)
+    output_dir: str = r"D:\NeuralDEM\NeuralDEM-stage6b\training\stage6b_mass_physics_results"

@@ -1,0 +1,13 @@
+{
+  "models": [
+    "stage6",
+    "stage6b"
+  ],
+  "fixed_horizon_rows": 60,
+  "physics_rows": 8,
+  "time_derivative_rows": 24,
+  "flux_rows": 56,
+  "rollout_rows": 14,
+  "comparison_rows": 49,
+  "nan_or_inf": false
+}

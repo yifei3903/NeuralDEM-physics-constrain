@@ -1,0 +1,71 @@
+{
+  "device": "cpu",
+  "lambda_mass": 0.001,
+  "L_data": 3.368994951248169,
+  "L_mass_raw": 9.913466453552246,
+  "L_mass_weighted": 0.00991346687078476,
+  "L_total": 3.378908395767212,
+  "RMS_A": 0.22618069431181867,
+  "RMS_Dx": 0.23660562061386503,
+  "RMS_Dy": 0.02461285174417578,
+  "RMS_Dz": 2.700810656501388,
+  "RMS_B": 2.9365988757290165,
+  "RMS_R": 3.148565817697717,
+  "corr_A_B": -0.5362887083557171,
+  "corr_Dy_Dz": 0.704584426524088,
+  "forward_finite": true,
+  "all_terms_finite": true,
+  "losses_finite": true,
+  "backward_gradients_finite": true,
+  "optimizer_step_success": true,
+  "initial_physics_gradients": {
+    "fluid_decoder": {
+      "parameters_with_gradient": 20,
+      "norm": 1494.251150242154,
+      "finite": true
+    },
+    "transformer": {
+      "parameters_with_gradient": 74,
+      "norm": 0.0,
+      "finite": true
+    },
+    "fluid_encoder": {
+      "parameters_with_gradient": 2,
+      "norm": 0.0,
+      "finite": true
+    },
+    "particle_decoder": {
+      "parameters_with_gradient": 0,
+      "norm": 0.0,
+      "finite": true
+    }
+  },
+  "post_step_physics_gradients": {
+    "fluid_decoder": {
+      "parameters_with_gradient": 20,
+      "norm": 1607.4493771189188,
+      "finite": true
+    },
+    "transformer": {
+      "parameters_with_gradient": 74,
+      "norm": 0.002926298630226171,
+      "finite": true
+    },
+    "fluid_encoder": {
+      "parameters_with_gradient": 2,
+      "norm": 0.1550851796272788,
+      "finite": true
+    },
+    "particle_decoder": {
+      "parameters_with_gradient": 0,
+      "norm": 0.0,
+      "finite": true
+    }
+  },
+  "encoder_calls_for_k_queries": 1,
+  "queries_per_anchor": 4,
+  "perturbed_query_change": 7.928162813186646e-05,
+  "other_query_max_change": 0.0,
+  "has_stage7_dynamics_generator": false,
+  "nan_or_inf": false
+}
